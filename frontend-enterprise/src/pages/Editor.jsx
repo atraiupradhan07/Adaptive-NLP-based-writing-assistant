@@ -170,9 +170,9 @@ const Editor = () => {
                      <select 
                        value={writingType}
                        onChange={(e) => setWritingType(e.target.value)}
-                       className="bg-transparent border-none outline-none cursor-pointer hover:text-white"
+                       className="bg-background text-white border-none outline-none cursor-pointer hover:text-white"
                      >
-                       {WRITING_TYPES.map(t => <option key={t.id} value={t.id} className="bg-background">{t.label}</option>)}
+                       {WRITING_TYPES.map(t => <option key={t.id} value={t.id} className="bg-background text-white">{t.label}</option>)}
                      </select>
                    </div>
                 </div>

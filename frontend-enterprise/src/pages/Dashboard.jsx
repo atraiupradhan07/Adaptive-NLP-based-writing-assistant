@@ -569,14 +569,14 @@ const Dashboard = () => {
             <select
               value={newDocType}
               onChange={e => setNewDocType(e.target.value)}
-              className="w-full bg-white/5 border border-white/10 rounded-xl py-3 px-4 outline-none focus:ring-2 focus:ring-accent/50"
+              className="w-full bg-white/5 text-white border border-white/10 rounded-xl py-3 px-4 outline-none focus:ring-2 focus:ring-accent/50"
             >
-              <option value="general">General</option>
-              <option value="academic">Academic / Thesis</option>
-              <option value="email">Email / Correspondence</option>
-              <option value="technical">Technical Documentation</option>
-              <option value="creative">Creative Writing</option>
-              <option value="blog">Blog / Article</option>
+              <option className="bg-background text-white" value="general">General</option>
+              <option className="bg-background text-white" value="academic">Academic / Thesis</option>
+              <option className="bg-background text-white" value="email">Email / Correspondence</option>
+              <option className="bg-background text-white" value="technical">Technical Documentation</option>
+              <option className="bg-background text-white" value="creative">Creative Writing</option>
+              <option className="bg-background text-white" value="blog">Blog / Article</option>
             </select>
           </div>
           <button type="submit" className="button-primary w-full py-3">Create Project</button>
